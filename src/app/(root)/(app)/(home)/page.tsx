@@ -12,9 +12,7 @@ export default function HomePage() {
           <span className=" z-10 block text-[calc(1.825rem+6.9vw)] font-bold leading-none">Liliane El Mallah</span>{' '}
           <span className="grid grid-cols-2 justify-items-end">
             <span className="block"></span>
-            <span className="block text-sm opacity-90">
-            Innovative Organic Interior Designer             
-            </span>
+            <span className="block text-sm opacity-90">Innovative Organic Interior Designer</span>
           </span>
         </h1>
         <div className="absolute -bottom-1/4 mx-auto flex">

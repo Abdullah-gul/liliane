@@ -13,7 +13,6 @@
         "noSortAlphabetically": true
       }
     ],
-    "react/no-unescaped-entities": "off",
-    "prettier/prettier": "error"
+    "react/no-unescaped-entities": "off"
   }
 }

@@ -1,23 +1,24 @@
-'use client';
-import { memo, useEffect, useRef } from 'react';
-import langColors from '@/constans/langColors';
-import LangBar from './LangBar';
-import LangTextAnimation from './LangTextAnimation';
-import { FiStar } from 'react-icons/fi';
-import { IProject } from '@/types';
-import Image from 'next/image';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { memo, useEffect, useRef } from 'react'
+import langColors from '@/constans/langColors'
+import LangBar from './LangBar'
+import LangTextAnimation from './LangTextAnimation'
+import { FiStar } from 'react-icons/fi'
+import { IProject } from '@/types'
+import Image from 'next/image'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-const RepositoryCard: React.FC<{ repo: IProject }> = ({ repo }) => {
-  const data = [repo];
-  const cardRef = useRef<HTMLDivElement | null>(null);
+const RepositoryCard: React.FC<{ repo: IProject; key: number }> = ({ repo, key }) => {
+  const data = [repo]
+  const cardRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    // Register ScrollTrigger
-    gsap.registerPlugin(ScrollTrigger);
 
-    const element = cardRef.current;
+    // Register ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger)
+
+    const element = cardRef.current
     if (element) {
       // Create the animation
       gsap.fromTo(
@@ -33,28 +34,27 @@ const RepositoryCard: React.FC<{ repo: IProject }> = ({ repo }) => {
             toggleActions: 'play none none reverse', // Play on enter, reverse on leave
             markers: false, // Optional: Show markers for debugging
           },
-        }
-      );
+        },
+      )
     }
 
     // Clean up the scroll trigger instance on unmount
     return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
+    }
+  }, [])
 
   return (
     <div>
-      <div
-        ref={cardRef}
-        className="relative p-8 bg-white/30 backdrop-blur-md rounded-lg shadow-lg"
-      >
+      <div ref={cardRef} className="relative rounded-lg bg-white/30 p-8 shadow-lg backdrop-blur-md">
         {data.map((e) => (
-          <Image  src={e.project_image} alt="" />
+          
+            <Image key={e.project_image} src={e.project_image} alt="" />
+        
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default memo(RepositoryCard);
+export default memo(RepositoryCard)

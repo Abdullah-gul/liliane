@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next'
 import PageTitleAnimation from './components/PageTitleAnimation'
 import RootBackground from './components/RootBackground'

@@ -12,57 +12,40 @@ import p8 from '@/assets/pic/p8.jpg'
 import p9 from '@/assets/pic/p9.jpg'
 import p10 from '@/assets/pic/p10.jpg'
 
-
-const myData   = [
+const myData = [
   {
-   
-    project_image : p1
+    project_image: p1,
   },
   {
-   
-    project_image : p2
+    project_image: p2,
   },
   {
-   
-    project_image : p3
+    project_image: p3,
   },
   {
-   
-    project_image : p4
+    project_image: p4,
   },
   {
-   
-    project_image : p5
+    project_image: p5,
   },
   {
-  
-    project_image : p6
+    project_image: p6,
   },
   {
-  
-    project_image : p7
+    project_image: p7,
   },
   {
-   
-    project_image : p8
+    project_image: p8,
   },
   {
-   
-    project_image : p9
+    project_image: p9,
   },
   {
-   
-    project_image : p10
+    project_image: p10,
   },
 ]
 
-const getProjects  = async () => {
- 
-  
-    
-
-   
-
+const getProjects = async () => {
   return myData
 }
 

@@ -8,16 +8,14 @@ export const NAV_ITEMS = [
   { path: '/blog', label: 'Blog', Icon: FiGlobe },
   { path: '/projects', label: 'Projects', Icon: FiClipboard },
   { path: '/contact', label: 'Contact', Icon: FiMail },
-  // { path: '/guestbook', label: 'Guestbook', Icon: FiBookOpen },
 ]
 
 export const PAGE_TITLES = {
   '/': '._',
   '/about': 'About',
   '/blog': 'Blog',
-  '/projects': 'Projects', 
+  '/projects': 'Projects',
   '/contact': 'Contact',
-  // '/guestbook': 'G-book',
 }
 
 export const SOCIALS = {
