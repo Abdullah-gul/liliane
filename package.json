@@ -1,10 +1,6 @@
 {
-  "name": "next-personal-web-app",
+  "name": "portfolio",
   "version": "0.1.0",
-  "repository": "https://github.com/dedeard/next-personal-web-app.git",
-  "author": "dede ariansya <me@dedeard.my.id>",
-  "license": "MIT",
-  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
