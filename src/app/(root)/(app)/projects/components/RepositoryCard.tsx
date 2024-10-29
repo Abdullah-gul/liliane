@@ -14,7 +14,6 @@ const RepositoryCard: React.FC<{ repo: IProject; key: number }> = ({ repo, key }
   const cardRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-
     // Register ScrollTrigger
     gsap.registerPlugin(ScrollTrigger)
 
@@ -48,9 +47,7 @@ const RepositoryCard: React.FC<{ repo: IProject; key: number }> = ({ repo, key }
     <div>
       <div ref={cardRef} className="relative rounded-lg bg-white/30 p-8 shadow-lg backdrop-blur-md">
         {data.map((e) => (
-          
-            <Image key={e.project_image} src={e.project_image} alt="" />
-        
+          <Image key={e.project_image} src={e.project_image} alt="" />
         ))}
       </div>
     </div>

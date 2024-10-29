@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import lilianeMallahPic from '@/assets/liliane.jpg' // Replace with actual image path
+import lilianeMallahPic from '@/assets/liliane.jpeg' // Replace with actual image path
 import PageTitle from '../components/PageTitle'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -51,7 +51,7 @@ export default function AboutPage() {
   return (
     <>
       <PageTitle title="About" />
-      <div className="mt-10 md:flex md:items-start md:justify-center">
+      <div className="relative rounded-lg bg-white/30 p-8 shadow-lg backdrop-blur-md  mt-10 md:flex md:items-start md:justify-center">
         <div ref={imgRef} className="mb-5 md:w-56">
           <Image
             src={lilianeMallahPic}
@@ -63,7 +63,7 @@ export default function AboutPage() {
         </div>
 
         {/* Right Section: Content */}
-        <div ref={textRef} className="md:flex-1 md:pl-6">
+        <div ref={textRef} className=" md:flex-1 md:pl-6">
           <h2 className="mb-2 text-2xl font-bold text-gray-800 dark:text-white">I’m Liliane El Mallah</h2>
           <div className="mb-6">
             <p className="mb-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
