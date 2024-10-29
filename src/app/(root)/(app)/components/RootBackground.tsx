@@ -12,14 +12,14 @@ const RootBackground: React.FC = () => {
 
   return (
     <>
-      <button
+      {/* <button
         aria-label="Audio toggle"
         type="button"
         className="fixed right-0 top-0 z-[120] mr-3 mt-3 leading-none md:mr-5 md:mt-5 lg:mr-10"
         onClick={() => toggleVideo()}
       >
         {isVideoPlayed ? <FiVolume2 size={18} /> : <FiVolumeX size={18} />}
-      </button>
+      </button> */}
       <div className="fixed left-0 top-0 z-0 h-full w-full overflow-hidden">
         {' '}
         {/* Fixed and behind other components */}

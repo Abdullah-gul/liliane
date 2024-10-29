@@ -1,21 +1,8 @@
-import type { Metadata } from 'next'
 import { getBlogPosts } from '@/utils/get-blog-posts'
 import PageTitle from '../components/PageTitle'
 import BlogPostItem from './components/BlogPostItem'
 
-export const metadata: Metadata = {
-  title: 'Lilane el mallah',
-  description: '',
-  openGraph: {
-    images: '/media/poster.jpg',
-    title: '',
-    description: 'I’m liliane el mallah',
-    url: '/',
-  },
-  alternates: {
-    canonical: '/',
-  },
-}
+
 
 export default async function BlogPage() {
   const blogs = getBlogPosts().sort((a, b) => {
